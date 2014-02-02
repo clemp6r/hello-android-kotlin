@@ -17,4 +17,5 @@ By default you have a run configuration named "Launch Kotlin activity" that will
 Build with Maven
 ----------------
 Run the following command to build the APK with Maven:
+
     $ mvn package
