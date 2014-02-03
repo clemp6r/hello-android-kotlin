@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Hello Android Kotlin Maven</string>
+    <string name="app_name">Hello Kotlin!</string>
     <string name="hello_message">Hello Kotlin, %s</string>
+    <string name="button_label">Click me</string>
 
 </resources>
