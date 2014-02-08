@@ -16,7 +16,7 @@ class HelloKotlinActivity() : Activity() {
         setContentView(R.layout.hello_kotlin_activity)
 
         val textView = findViewById(R.id.textView) as TextView
-        textView.setText(getString(R.string.hello_message, SomeJavaClass.getItWorksMessage()));
+        textView.setText(getString(R.string.hello_message, SomeJavaClass.getItWorksMessage()))
 
         val button = findViewById(R.id.button) as Button
         button.setOnClickListener { textView.setText(getMessage()) }
