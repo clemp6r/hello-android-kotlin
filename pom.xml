@@ -68,7 +68,9 @@
             <!-- Workaround for compatibility problem between Android and Kotlin Maven plugins
                  See: http://youtrack.jetbrains.com/issue/KT-3679
                  See: https://github.com/jayway/maven-android-plugin/issues/276
+                 /!\ Disabled for testing purpose
             -->
+            <!--
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
@@ -86,6 +88,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
 
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
