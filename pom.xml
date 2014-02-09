@@ -54,7 +54,7 @@
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.8.3-SNAPSHOT</version>
                 <configuration>
                     <sdk>
                         <!-- platform or api level (api level 19 = 4.4)-->
@@ -64,31 +64,6 @@
                 </configuration>
                 <extensions>true</extensions>
             </plugin>
-
-            <!-- Workaround for compatibility problem between Android and Kotlin Maven plugins
-                 See: http://youtrack.jetbrains.com/issue/KT-3679
-                 See: https://github.com/jayway/maven-android-plugin/issues/276
-                 /!\ Disabled for testing purpose
-            -->
-            <!--
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>generate-sources</id>
-                        <phase>generate-sources</phase>
-                        <configuration>
-                            <tasks>
-                                <mkdir dir="target/generated-sources/extracted-dependencies/src/main/java"/>
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            -->
 
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
@@ -137,6 +112,14 @@
             <releases>
                 <enabled>false</enabled>
             </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>oss.sonatype.org-jayway-snapshots</id>
+            <name>Jayway OpenSource SNAPSHOTs on Sonatype.org</name>
+            <url>http://oss.sonatype.org/content/repositories/jayway-snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
