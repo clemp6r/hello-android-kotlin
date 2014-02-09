@@ -60,8 +60,7 @@ In a few words, here are the requirements:
 * Enable the Kotlin build plugin for Maven
 * Add the Kotlin library dependency
 * Adding repositories is required as the Kotlin dependencies are still snapshots
-* We need build-helper-maven-plugin to include src/main/kotlin as a source folder
-* As a workaround to a known interoperability problem between the Kotlin and the Android maven plugins, we need maven-antrun-plugin to create a missing target folder automatically (see http://youtrack.jetbrains.com/issue/KT-3679).
+* Use build-helper-maven-plugin to include src/main/kotlin as a source folder
 
 Prerequisites to run this project
 -------------
