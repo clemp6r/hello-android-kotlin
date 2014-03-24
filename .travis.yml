@@ -10,5 +10,5 @@ before_install:
     - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
     # Install required Android components.
-    - echo y | android update sdk --filter platform-tools,android-19,extra-android-support --no-ui --force
+    - echo y | android update sdk --filter platform-tools,build-tools,android-19,extra-android-support --no-ui --force
 
